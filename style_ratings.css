@@ -1,0 +1,113 @@
+body
+{
+  background-color:rgb(58, 55, 55);
+  font-family: 'Alegreya SC';
+}
+.ratings
+{
+    position:absolute; 
+    margin-left: 600px;
+    transform:rotateY(180deg) translate(50%,0%);
+    display:flex;
+    width:100px;
+    height: 100px;
+    left:20%;
+
+}
+.ratings label
+{
+    display:block;
+    cursor:pointer;
+    width:50px;
+   
+    /* background: #ccc; */
+}
+.ratings label:before
+{
+    content:'\f005';
+    font-family:fontAwesome;
+    position:relative;
+    display:block;
+    font-size:50px;
+    color:white;
+    margin:15px;
+ 
+}
+.ratings label:after
+{
+    content:'\f005';
+    font-family:fontAwesome;
+    position:absolute;
+    display:block;
+    font-size:50px;
+    color:yellow;
+    margin:15px;
+    top:0;
+    opacity:0;
+    transition:0.5s;
+    text-shadow:0 2px 5px rgba(0,0,0,0.5);
+}
+.ratings label:hover:after,
+.ratings label:hover ~ label:after,
+.ratings input:checked ~ label:after
+{
+    opacity:1;
+}
+button
+{
+    background-color: blanchedalmond;
+    border: 1px;
+}
+.main
+{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 100px;
+    flex-direction: row;
+    background-size: contain;
+    width:100%;
+    /* opacity: 1; */
+}
+i
+{
+   padding: 25px;
+   color: white;
+   width: 45px;
+   text-align: center;
+   height: fit-content;
+   margin-right: 3%;
+   
+ }
+ .input-field
+ {
+     height:35px;
+     font-size: large;
+     width:309px;
+ }
+ .comment
+ {
+     font-size: large;
+     height:160px;
+     width:309px;
+     /* font-family: Arial, Helvetica, sans-serif; */
+ }
+ .submit_r
+ {
+     margin-left: 15%;
+     margin-top: 7%;
+     font-size: larger;
+ }
+ .form_
+ {
+     width:50%;
+     margin: 2px 450px;
+     background-size: cover;
+     z-index:1;
+ }
+
+ #c_star
+ {
+     color:rgb(155, 155, 10);
+     text-shadow: 2px;
+     padding-left: 0%;
+ }
